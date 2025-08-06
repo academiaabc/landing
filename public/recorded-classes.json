@@ -1,10 +1,13 @@
 [
   {
     "id": 1,
-    "titulo": "Perros de Trabajo y B?squeda",
+    "titulo": "Perros de Trabajo y Búsqueda",
     "tipo": "Masterclass",
     "temas": [
-      "Rastro | Seguridad y Protecci?n | Detecci?n de sustancias | B?squeda y rescate"
+      "Rastro",
+      "Seguridad y Protección",
+      "Detección de sustancias",
+      "Búsqueda y rescate"
     ],
     "profesor": {
       "nombre": "Cesar Huala",
@@ -16,7 +19,10 @@
     "titulo": "Oratoria",
     "tipo": "Masterclass",
     "temas": [
-      "Conversaciones dif?ciles | T?cnicas para hablar en p?blico | Clases grupales e individuales | Comunicaci?n efectiva"
+      "Conversaciones difíciles",
+      "Técnicas para hablar en público",
+      "Clases grupales e individuales",
+      "Comunicación efectiva"
     ],
     "profesor": {
       "nombre": "Facundo Maldonado",
@@ -25,10 +31,13 @@
   },
   {
     "id": 3,
-    "titulo": "Psicolog?a",
+    "titulo": "Psicología",
     "tipo": "Masterclass",
     "temas": [
-      "Claves para la psicolog?a del emprendedor | S?ndrome del impostor | Desarrollo personal | Emprendimiento"
+      "Claves para la psicología del emprendedor",
+      "Síndrome del impostor",
+      "Desarrollo personal",
+      "Emprendimiento"
     ],
     "profesor": {
       "nombre": "Patricia Moya",
@@ -40,7 +49,10 @@
     "titulo": "Flores de Bach",
     "tipo": "Masterclass",
     "temas": [
-      "Esencias florales de Bach | Formulaci?n y administraci?n del gotero | Terapias naturales | Bienestar animal"
+      "Esencias florales de Bach",
+      "Formulación y administración del gotero",
+      "Terapias naturales",
+      "Bienestar animal"
     ],
     "profesor": {
       "nombre": "Melisa Vilca",
@@ -52,10 +64,13 @@
     "titulo": "Comportamiento Felino",
     "tipo": "Masterclass",
     "temas": [
-      "Comportamiento y Lenguaje Felino | Adaptaci?n perros/gatos | Etolog?a felina | Convivencia multiespecie"
+      "Comportamiento y Lenguaje Felino",
+      "Adaptación perros/gatos",
+      "Etología felina",
+      "Convivencia multiespecie"
     ],
     "profesor": {
-      "nombre": "Alejandra L?pez Irala",
+      "nombre": "Alejandra López Irala",
       "instagram": "rasca.y.pica"
     }
   },
@@ -64,7 +79,10 @@
     "titulo": "Veterinaria",
     "tipo": "Masterclass",
     "temas": [
-      "Emergencias y manejo en la veterinaria | Trabajo en equipo entre adiestradores y veterinarios | Primeros auxilios | Protocolo de emergencias"
+      "Emergencias y manejo en la veterinaria",
+      "Trabajo en equipo entre adiestradores y veterinarios",
+      "Primeros auxilios",
+      "Protocolo de emergencias"
     ],
     "profesor": {
       "nombre": "Alejandro Brunet",
@@ -133,7 +151,7 @@
   },
   {
     "id": 13,
-    "titulo": "Beb?s y perros",
+    "titulo": "Bebés y perros",
     "tipo": "Taller",
     "temas": [],
     "profesor": {
