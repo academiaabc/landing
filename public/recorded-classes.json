@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "titulo": "Perros de Trabajo y Búsqueda",
+    "titulo": "Perros  de Trabajo: Busqueda y Seguridad",
     "tipo": "Masterclass",
     "temas": [
       "Rastro",
@@ -10,13 +10,13 @@
       "Búsqueda y rescate"
     ],
     "profesor": {
-      "nombre": "Cesar Huala",
-      "instagram": "club_canino_pampa"
+      "nombre": "Sin nombre",
+      "instagram": ""
     }
   },
   {
     "id": 2,
-    "titulo": "Oratoria",
+    "titulo": "Oratoria: Comunicacion Efectiva",
     "tipo": "Masterclass",
     "temas": [
       "Conversaciones difíciles",
@@ -25,13 +25,13 @@
       "Comunicación efectiva"
     ],
     "profesor": {
-      "nombre": "Facundo Maldonado",
-      "instagram": "facumarketing"
+      "nombre": "Sin nombre",
+      "instagram": ""
     }
   },
   {
     "id": 3,
-    "titulo": "Psicología",
+    "titulo": "Psicología para el Emprendedor Canino",
     "tipo": "Masterclass",
     "temas": [
       "Claves para la psicología del emprendedor",
@@ -40,13 +40,13 @@
       "Emprendimiento"
     ],
     "profesor": {
-      "nombre": "Patricia Moya",
-      "instagram": "soy.patriciamoya"
+      "nombre": "Sin nombre",
+      "instagram": ""
     }
   },
   {
     "id": 4,
-    "titulo": "Flores de Bach",
+    "titulo": "Flores de Bach en Animales: Vinculo, emociones y Bienestar canino",
     "tipo": "Masterclass",
     "temas": [
       "Esencias florales de Bach",
@@ -55,28 +55,27 @@
       "Bienestar animal"
     ],
     "profesor": {
-      "nombre": "Melisa Vilca",
-      "instagram": "sinergia.animal"
+      "nombre": "Sin nombre",
+      "instagram": ""
     }
   },
   {
     "id": 5,
-    "titulo": "Comportamiento Felino",
+    "titulo": "Comportamiento Felino: Entre Ladridos y Maullidos. Claves para la convivencia Interespecie",
     "tipo": "Masterclass",
     "temas": [
       "Comportamiento y Lenguaje Felino",
       "Adaptación perros/gatos",
-      "Etología felina",
       "Convivencia multiespecie"
     ],
     "profesor": {
-      "nombre": "Alejandra López Irala",
-      "instagram": "rasca.y.pica"
+      "nombre": "Sin nombre",
+      "instagram": ""
     }
   },
   {
     "id": 6,
-    "titulo": "Veterinaria",
+    "titulo": "Veterinaria: Primeros Auxilios y RCP",
     "tipo": "Masterclass",
     "temas": [
       "Emergencias y manejo en la veterinaria",
@@ -85,15 +84,22 @@
       "Protocolo de emergencias"
     ],
     "profesor": {
-      "nombre": "Alejandro Brunet",
-      "instagram": "vetbrunel"
+      "nombre": "Sin nombre",
+      "instagram": ""
     }
   },
   {
     "id": 7,
-    "titulo": "Perros de Trabajo y Asistencia",
+    "titulo": "Perros de Terapia y Asistencia",
     "tipo": "Masterclass",
-    "temas": [],
+    "temas": [
+      "Diferencias",
+      "Seleccion del cachorro",
+      "Perro de Asistencia: Tipos, formacion y vinculacion",
+      "Perro de Terapia: Formacion, campo laboral, examenes",
+      "Perro de soporte emocional.",
+      "Leyes actualizadas al 2025"
+    ],
     "profesor": {
       "nombre": "Sin nombre",
       "instagram": ""
@@ -101,9 +107,19 @@
   },
   {
     "id": 8,
-    "titulo": "Marketing",
+    "titulo": "Marketing: Redes Sociales para Emprendedor Canino",
     "tipo": "Masterclass",
-    "temas": [],
+    "temas": [
+      "Marca vs Emprendedor",
+      "Marca personal",
+      "Diferencias",
+      "Planificacion de contenido",
+      "Herramientas utiles",
+      "Algoritmo",
+      "Alcance y vida de un posteo",
+      "Nicho y publico objetivo",
+      "Investigacion de mercado."
+    ],
     "profesor": {
       "nombre": "Sin nombre",
       "instagram": ""
@@ -111,9 +127,16 @@
   },
   {
     "id": 9,
-    "titulo": "Ventas",
+    "titulo": "Ventas: Como caraj* empezar a vender mi servicio de Adiestrador Canino?",
     "tipo": "Masterclass",
-    "temas": [],
+    "temas": [
+      "Venta consultiva",
+      "Cliente ideal",
+      "Pricing",
+      "Comunicacion efectiva",
+      "Captacion de clientes",
+      "Venta exitosa"
+    ],
     "profesor": {
       "nombre": "Sin nombre",
       "instagram": ""
@@ -121,9 +144,15 @@
   },
   {
     "id": 10,
-    "titulo": "Neuromarketing",
+    "titulo": "Neuromarketing: Como persuadir a la hora de vender",
     "tipo": "Masterclass",
-    "temas": [],
+    "temas": [
+      "Conexion emocional",
+      "Estrategias de persuasion",
+      "Psicologia del color",
+      "Tecnicas del Neuromarketing",
+      "Lenguaje no verbal"
+    ],
     "profesor": {
       "nombre": "Sin nombre",
       "instagram": ""
@@ -131,9 +160,14 @@
   },
   {
     "id": 11,
-    "titulo": "Lenguaje y Comportamiento",
+    "titulo": "Lenguaje y Comportamiento: Hablemos menos para comunicarnos mas",
     "tipo": "Seminario",
-    "temas": [],
+    "temas": [
+      "Lenguaje canino",
+      "Sentidos y comunicacion",
+      "Etapas de desarrollo",
+      "Señales de la comunicacion"
+    ],
     "profesor": {
       "nombre": "Sin nombre",
       "instagram": ""
@@ -141,9 +175,16 @@
   },
   {
     "id": 12,
-    "titulo": "Cachorros",
+    "titulo": "Cachorros: Educando a mi cachorro de 0 a 9 meses",
     "tipo": "Taller",
-    "temas": [],
+    "temas": [
+      "Etapas de desarrollo",
+      "No morder las manos",
+      "Primeros paseos",
+      "Juegos apropiados",
+      "Evitar problemas de comportamiento",
+      "Habitos higienicos"
+    ],
     "profesor": {
       "nombre": "Sin nombre",
       "instagram": ""
@@ -151,9 +192,14 @@
   },
   {
     "id": 13,
-    "titulo": "Bebés y perros",
+    "titulo": " Entre bebés y perros",
     "tipo": "Taller",
-    "temas": [],
+    "temas": [
+      "Bienestar canino",
+      "Preparacion para la llegada del bebe",
+      "Interacciones controladas",
+      "Lenguaje canino"
+    ],
     "profesor": {
       "nombre": "Sin nombre",
       "instagram": ""
