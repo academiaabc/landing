@@ -1,0 +1,100 @@
+/* ========================================
+   Image Components - Academia ABC
+   ======================================== */
+
+/* Member Images */
+.member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-full);
+    transition: transform var(--transition-normal);
+}
+
+.member-photo {
+    overflow: hidden;
+}
+
+.member-photo:hover .member-image {
+    transform: scale(1.05);
+}
+
+/* Course Images */
+.course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+}
+
+/* Background Images */
+.hero-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Logo Variants */
+.logo-main {
+    height: 60px;
+    width: auto;
+}
+
+.logo-footer {
+    height: 40px;
+    width: auto;
+    opacity: 0.8;
+}
+
+/* Image Loading States */
+.image-loading {
+    background: var(--light-gray);
+    border-radius: var(--radius-md);
+    position: relative;
+    overflow: hidden;
+}
+
+.image-loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Fallback Icons */
+.image-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: var(--light-gray);
+    color: var(--warm-gold);
+    font-size: 4rem;
+}
+
+/* Responsive Images */
+@media (max-width: 768px) {
+    .course-image {
+        height: 150px;
+    }
+    
+    .logo-main {
+        height: 50px;
+    }
+    
+    .member-image {
+        width: 150px;
+        height: 150px;
+    }
+}

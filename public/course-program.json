@@ -1,0 +1,122 @@
+[
+  {
+    "level": 1,
+    "title": "Educacion inicial: La familia y el perro, vinculo, evolucion y domesticacion. - Obediencia Basica",
+    "modules": [
+      {
+        "label": "",
+        "title": "Charla Introductoria"
+      },
+      {
+        "label": "Modulo 1",
+        "title": "Evolucion e historia del perro"
+      },
+      {
+        "label": "Modulo 2",
+        "title": "Necesidades del perro domestico"
+      },
+      {
+        "label": "Modulo 3",
+        "title": "Bienestar animal"
+      },
+      {
+        "label": "Modulo 4",
+        "title": "Metodos de aprendizaje"
+      },
+      {
+        "label": "Modulo 5",
+        "title": "Paseo y herramientas de paseo / PRIMER PARCIAL"
+      },
+      {
+        "label": "Modulo 6",
+        "title": "Cachorros y socializacion"
+      },
+      {
+        "label": "Modulo 7",
+        "title": "Perros Adolecentes y Gerontes / Perros con capacidades diferentes / Sentidos / TP Grupal"
+      },
+      {
+        "label": "Modulo 8",
+        "title": "Introduccion al lenguaje canino"
+      },
+      {
+        "label": "Modulo 9",
+        "title": "Comportamientos conflictivos y resolucion"
+      },
+      {
+        "label": "Modulo 10",
+        "title": "RINDEN TP"
+      },
+      {
+        "label": "CLASE ADICIONAL",
+        "title": "Terapias alternativas y complementarias"
+      },
+      {
+        "label": "CLASE ADICIONAL",
+        "title": "Deportes y habilidades caninas"
+      },
+      {
+        "label": "",
+        "title": "ENTREGA EXAMEN PRACTICO NIVEL 1"
+      },
+      {
+        "label": "Masterclass Emociones y Nutricion",
+        "title": "Nutricion y alimentacion natural | A cargo de Fatima Tocre - Veterinaria @nutrivet.pe"
+      }
+    ]
+  },
+  {
+    "level": 2,
+    "title": "Educador canino profesional: Interpretacion y resolucion de conflictos. - Obediencia Avanzada",
+    "modules": [
+      {
+        "label": "Modulo 1",
+        "title": "Lenguaje canino e interpretacion"
+      },
+      {
+        "label": "Modulo 2",
+        "title": "Teorias del aprendizaje"
+      },
+      {
+        "label": "Modulo 3",
+        "title": "Sistema de recompensa - Fases y tecnicas del aprendizaje"
+      },
+      {
+        "label": "Modulo 4",
+        "title": "Sobre la profesion - Planificacion de una clase - Entrevista inicial - Medidas de seguridad"
+      },
+      {
+        "label": "Modulo 5",
+        "title": "Masterclass de Oratoria: 'Comunicacion Efectiva: Como hablar en publico?' | A cargo de Facundo Maldonado - @facumarketing"
+      },
+      {
+        "label": "Modulo 6",
+        "title": "Masterclass de Psicologia: 'Responsabilidad y balance: Como guiar sin cruzar los limites?' | A cargo de Lic. Patricia Moya"
+      },
+      {
+        "label": "Modulo 7",
+        "title": "Estres y ansiadad"
+      },
+      {
+        "label": "Modulo 8",
+        "title": "Miedos y fobias"
+      },
+      {
+        "label": "Modulo 9",
+        "title": "Agresion"
+      },
+      {
+        "label": "Modulo 10",
+        "title": "Agresion"
+      },
+      {
+        "label": "Modulo 11",
+        "title": "PARCIAL: Exposicion Pasantias"
+      },
+      {
+        "label": "Modulo 12",
+        "title": "Masterclass de Primeros Auxilios para educadores caninos | A cargo de Alejandro Brunel - Veterinario"
+      }
+    ]
+  }
+]

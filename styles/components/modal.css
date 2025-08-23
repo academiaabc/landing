@@ -1,0 +1,551 @@
+/* ========================================
+   Modal Component Styles
+   ======================================== */
+
+/* Modal Overlay */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 800px;
+  overflow: hidden;
+  animation: slideInUp 0.3s ease-out;
+}
+
+/* Modal Header */
+.modal-header {
+  background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+  color: var(--white);
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.modal-title-section {
+  flex: 1;
+}
+
+.modal-title {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: var(--font-bold);
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 1px;
+  color: var(--white);
+}
+
+.modal-subtitle {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.9;
+  font-weight: var(--font-regular);
+  color: var(--white);
+}
+
+.modal-logo {
+  margin: 0 1rem;
+}
+
+.modal-logo-img {
+  height: 60px;
+  width: auto;
+  /* Remove filter to show original logo colors */
+  filter: none;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  transition: background-color var(--transition-fast);
+}
+
+.modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2rem;
+  max-height: calc(90vh - 120px);
+  overflow-y: auto;
+}
+
+/* Level Navigation */
+.level-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--light-gray);
+  border-radius: var(--radius-sm);
+  border: 1px solid #e9ecef;
+}
+
+.nav-btn {
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-semibold);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background: var(--light-blue);
+  transform: translateY(-1px);
+}
+
+.nav-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.level-indicator {
+  text-align: center;
+  font-weight: var(--font-semibold);
+  color: var(--charcoal);
+  font-size: 1rem;
+}
+
+/* Level Content */
+.level-content {
+  margin-top: 1.5rem;
+}
+
+.level-title {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: var(--font-bold);
+  line-height: 1.3;
+}
+
+/* Modules Table */
+.modules-table-container {
+  overflow-x: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid #e9ecef;
+}
+
+.modules-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+.modules-table th {
+  background: var(--primary-blue);
+  color: var(--white);
+  padding: 1rem;
+  text-align: left;
+  font-weight: var(--font-semibold);
+  font-size: 1rem;
+}
+
+.modules-table th:first-child {
+  width: 150px;
+}
+
+.modules-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: top;
+}
+
+.modules-table tr:last-child td {
+  border-bottom: none;
+}
+
+.modules-table tr:nth-child(even) {
+  background: var(--light-gray);
+}
+
+.module-label {
+  font-weight: var(--font-semibold);
+  color: var(--primary-blue);
+  font-size: 0.9rem;
+}
+
+.module-title {
+  color: var(--charcoal);
+  line-height: 1.4;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal {
+    padding: 0.5rem;
+  }
+
+  .modal-content {
+    width: 100%;
+    max-height: 95vh;
+  }
+
+  .modal-header {
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  .modal-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .modal-logo-img {
+    height: 40px;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .modal-body {
+    padding: 1.5rem;
+  }
+
+  .level-navigation {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .level-title {
+    font-size: 1.2rem;
+  }
+
+  .modules-table th,
+  .modules-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .modules-table th:first-child {
+    width: 100px;
+  }
+
+  .module-label {
+    font-size: 0.8rem;
+  }
+
+  .module-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-header {
+    padding: 1rem;
+  }
+
+  .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-body {
+    padding: 1rem;
+  }
+
+  .modules-table th,
+  .modules-table td {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .modules-table th:first-child {
+    width: 80px;
+  }
+}
+
+/* ========================================
+   Reglamento Modal Specific Styles
+   ======================================== */
+
+.reglamento-modal-content {
+  max-width: 900px;
+  width: 95vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.reglamento-header {
+  background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.reglamento-header .modal-title {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.reglamento-header .modal-close {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reglamento-body {
+  padding: 0;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tabs Container */
+.tabs-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tabs Navigation */
+.tabs-nav {
+  display: flex;
+  border-bottom: 2px solid var(--light-gray);
+  background: var(--white);
+  flex-shrink: 0;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  font-weight: var(--font-semibold);
+  color: var(--charcoal);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border-bottom: 3px solid transparent;
+  font-size: 1rem;
+}
+
+.tab-btn:hover {
+  background: var(--light-gray);
+  color: var(--primary-blue);
+}
+
+.tab-btn.active {
+  color: var(--primary-blue);
+  border-bottom-color: var(--primary-blue);
+  background: var(--white);
+}
+
+/* Tabs Content */
+.tabs-content {
+  flex: 1;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.tab-content {
+  display: none;
+  height: 100%;
+  overflow-y: auto;
+  padding: 2rem;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content-placeholder {
+  color: var(--charcoal);
+}
+
+.tab-content-placeholder p {
+  font-size: 1rem;
+  margin: 0 0 0.75rem 0;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+.tab-content-placeholder ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.tab-content-placeholder ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: var(--charcoal);
+}
+
+.tab-content-placeholder u {
+  font-weight: var(--font-semibold);
+  color: var(--primary-blue);
+  text-decoration: underline;
+  display: block;
+  margin: 0.75rem 0 0.25rem 0;
+}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 1.5rem;
+  background: var(--light-gray);
+  text-align: center;
+  border-top: 1px solid #e9ecef;
+  flex-shrink: 0;
+}
+
+.footer-logo-img {
+  height: 50px;
+  width: auto;
+  opacity: 0.9;
+}
+
+/* Responsive Design for Reglamento Modal */
+@media (max-width: 768px) {
+  .reglamento-modal-content {
+    width: 100%;
+    height: 95vh;
+  }
+
+  .reglamento-header {
+    padding: 1rem 1.5rem;
+  }
+
+  .reglamento-header .modal-title {
+    font-size: 1.4rem;
+  }
+
+  .tabs-nav {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    text-align: center;
+    border-bottom: 1px solid var(--light-gray);
+    border-right: none;
+  }
+
+  .tab-btn.active {
+    border-bottom-color: var(--primary-blue);
+    border-right: none;
+  }
+
+  .tab-content {
+    padding: 1.5rem;
+  }
+
+  .tab-content-placeholder p {
+    font-size: 0.9rem;
+  }
+
+  .tab-content-placeholder ul li {
+    font-size: 0.9rem;
+  }
+
+  .footer-logo-img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reglamento-modal-content {
+    height: 98vh;
+  }
+
+  .reglamento-header .modal-title {
+    font-size: 1.2rem;
+  }
+
+  .tab-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .tab-content {
+    padding: 1rem;
+  }
+
+  .tab-content-placeholder p {
+    font-size: 0.85rem;
+  }
+
+  .tab-content-placeholder ul li {
+    font-size: 0.85rem;
+  }
+
+  .modal-footer {
+    padding: 1rem;
+  }
+}

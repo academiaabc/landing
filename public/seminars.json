@@ -1,1 +1,104 @@
-[]
+[
+  {
+    "titulo": "Masterclass Perros de Trabajo",
+    "fecha": "2 de Junio, 2025",
+    "hora": "19:00",
+    "temas": [
+      "Rastro",
+      "Seguridad y Protección",
+      "Detección de sustancias",
+      "Búsqueda y rescate"
+    ],
+    "profesor": {
+      "nombre": "Cesar Huala",
+      "imagen": "./assets/images/professors/cesar-huala.jpg",
+      "instagram": "club_canino_pampa"
+    },
+    "tipo": "presencial"
+  },
+  {
+    "titulo": "Masterclass Oratoria",
+    "fecha": "9 de Junio, 2025",
+    "hora": "19:00",
+    "temas": [
+      "Conversaciones difíciles",
+      "Técnicas para hablar en público",
+      "Clases grupales e individuales",
+      "Comunicación efectiva"
+    ],
+    "profesor": {
+      "nombre": "Facundo Maldonado",
+      "imagen": "./assets/images/professors/facundo-maldonado.jpg",
+      "instagram": "facumarketing"
+    },
+    "tipo": "presencial"
+  },
+  {
+    "titulo": "Masterclass Psicología",
+    "fecha": "23 de Junio, 2025",
+    "hora": "19:00",
+    "temas": [
+      "Claves para la psicología del emprendedor",
+      "Síndrome del impostor",
+      "Desarrollo personal",
+      "Emprendimiento"
+    ],
+    "profesor": {
+      "nombre": "Patricia Moya",
+      "imagen": "./assets/images/professors/patricia-moya.jpg",
+      "instagram": "soy.patriciamoya"
+    },
+    "tipo": "presencial"
+  },
+  {
+    "titulo": "Masterclass Flores de Bach",
+    "fecha": "7 y 14 de Julio, 2025",
+    "hora": "19:00",
+    "temas": [
+      "Esencias florales de Bach",
+      "Formulación y administración del gotero",
+      "Terapias naturales",
+      "Bienestar animal"
+    ],
+    "profesor": {
+      "nombre": "Melisa Vilca",
+      "imagen": "./assets/images/professors/melisa-vilca.jpg",
+      "instagram": "sinergia.animal"
+    },
+    "tipo": "presencial"
+  },
+  {
+    "titulo": "Masterclass Comportamiento Felino",
+    "fecha": "21 de Julio, 2025",
+    "hora": "19:00",
+    "temas": [
+      "Comportamiento y Lenguaje Felino",
+      "Adaptación perros/gatos",
+      "Etología felina",
+      "Convivencia multiespecie"
+    ],
+    "profesor": {
+      "nombre": "Alejandra López Irala",
+      "imagen": "./assets/images/professors/alejandra-lopez-irala.jpg",
+      "instagram": "rasca.y.pica"
+    },
+    "tipo": "presencial"
+  },
+  {
+    "titulo": "Masterclass Veterinaria",
+    "fecha": "Grabado",
+    "hora": "On Demand",
+    "temas": [
+      "Emergencias y manejo en la veterinaria",
+      "Trabajo en equipo entre adiestradores y veterinarios",
+      "Primeros auxilios",
+      "Protocolo de emergencias"
+    ],
+    "profesor": {
+      "nombre": "Alejandro Brunet",
+      "imagen": "./assets/images/professors/alejandro-brunet.jpg",
+      "instagram": "vetbrunel"
+    },
+    "tipo": "grabado"
+  }
+]

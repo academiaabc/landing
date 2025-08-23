@@ -1,0 +1,160 @@
+/* ========================================
+   Button Components - Academia ABC
+   ======================================== */
+
+/* Base Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--radius-xl);
+    font-family: var(--font-primary);
+    font-weight: var(--font-semibold);
+    font-size: var(--font-sm);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn:focus {
+    outline: 2px solid var(--warm-gold);
+    outline-offset: 2px;
+}
+
+/* Button Sizes */
+.btn-sm {
+    padding: 8px 16px;
+    font-size: var(--font-xs);
+}
+
+.btn-md {
+    padding: 12px 24px;
+    font-size: var(--font-sm);
+}
+
+.btn-lg {
+    padding: 15px 30px;
+    font-size: var(--font-md);
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    font-size: var(--font-lg);
+}
+
+/* Primary Button */
+.btn-primary {
+    background: var(--warm-gold);
+    color: var(--white);
+    border: 2px solid var(--warm-gold);
+}
+
+.btn-primary:hover {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background: transparent;
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Secondary Button (White variant for dark backgrounds) */
+.btn-secondary-white {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-secondary-white:hover {
+    background: var(--white);
+    color: var(--primary-blue);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* CTA Button (Call to Action) */
+.cta-button {
+    background: var(--warm-gold);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: var(--radius-xl);
+    text-decoration: none;
+    font-weight: var(--font-semibold);
+    font-family: var(--font-primary);
+    transition: all var(--transition-normal);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.cta-button:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Ghost Button */
+.btn-ghost {
+    background: transparent;
+    color: var(--primary-blue);
+    border: 2px solid transparent;
+}
+
+.btn-ghost:hover {
+    background: var(--light-gray);
+    color: var(--primary-blue);
+}
+
+/* Disabled Button */
+.btn:disabled,
+.btn.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.btn:disabled:hover,
+.btn.disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Button Groups */
+.btn-group {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}

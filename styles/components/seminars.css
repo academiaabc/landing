@@ -1,0 +1,478 @@
+/* ========================================
+   Seminars Calendar Component - Academia ABC
+   ======================================== */
+
+/* Masterclasses Section */
+.masterclasses {
+  padding: var(--space-3xl) 0;
+  background: var(--light-gray);
+}
+
+.masterclasses h2 {
+  text-align: center;
+  color: var(--primary-blue);
+  font-size: var(--font-3xl);
+  margin-bottom: var(--space-sm);
+}
+
+/* Pricing Information Section */
+.pricing-info-section {
+  margin: 3rem 0;
+  padding: 2rem 0;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background: var(--white, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(20, 73, 100, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(20, 73, 100, 0.15);
+}
+
+.pricing-card.featured {
+  border: 3px solid var(--warm-gold);
+  transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--warm-gold);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.pricing-header {
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.pricing-header h3 {
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.price .currency {
+  font-size: 1.5rem;
+  color: var(--charcoal);
+}
+
+.price .amount {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+.savings {
+  color: var(--warm-gold);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.pricing-features {
+  padding: 2rem;
+  list-style: none;
+}
+
+.pricing-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-features li i {
+  color: var(--warm-gold);
+  font-size: 1.1rem;
+}
+:root {
+  --primary-blue: #144964;
+  --light-blue: #2b6b8a;
+  --warm-gold: #c8a882;
+  --cream: #fffcfa;
+  --charcoal: #333333;
+  --light-gray: #f8f9fa;
+
+  --radius: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--cream);
+  color: var(--charcoal);
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin: 0 60px; /* Space for navigation buttons */
+}
+
+.seminars-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2rem;
+}
+
+/* Old grid fallback (hidden by default) */
+.seminars-grid {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid rgba(43, 107, 138, 0.2);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 380px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background: linear-gradient(to right, var(--primary-blue), var(--light-blue));
+  padding: 1rem;
+  color: white;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.card-header .meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.card-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  background: var(--warm-gold);
+  color: var(--charcoal);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-xl);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.professor {
+  display: flex;
+  gap: 1rem;
+  border-top: 1px solid var(--light-gray);
+  padding-top: 1rem;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--warm-gold);
+  object-fit: cover;
+  background: var(--light-blue);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.professor-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.professor-info p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.professor-info a {
+  text-decoration: none;
+  color: var(--light-blue);
+  font-size: 0.8rem;
+  transition: color 0.3s;
+}
+
+.professor-info a:hover {
+  color: var(--primary-blue);
+}
+
+/* Carousel Controls */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--white);
+  border: 2px solid var(--primary-blue);
+  color: var(--primary-blue);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn:hover {
+  background: var(--primary-blue);
+  color: var(--white);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(20, 73, 100, 0.3);
+}
+
+.carousel-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-btn-prev {
+  left: 0;
+}
+
+.carousel-btn-next {
+  right: 0;
+}
+
+.carousel-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: translateY(-50%) scale(1);
+}
+
+.carousel-btn:disabled:hover {
+  background: var(--white);
+  color: var(--primary-blue);
+  transform: translateY(-50%) scale(1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 2rem;
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(20, 73, 100, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.carousel-indicator.active {
+  background: var(--primary-blue);
+  transform: scale(1.2);
+}
+
+.carousel-indicator:hover {
+  background: var(--warm-gold);
+  transform: scale(1.1);
+}
+
+/* Seminars CTA Section */
+.seminars-cta {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.cta-description {
+  font-size: var(--font-lg);
+  color: var(--charcoal);
+  opacity: 0.8;
+  margin-bottom: var(--space-lg);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seminars-cta .btn-primary {
+  background: var(--warm-gold);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 16px 32px;
+  border-radius: var(--radius-xl);
+  border: none;
+  box-shadow: 0 4px 15px rgba(200, 168, 130, 0.3);
+  transition: all 0.3s ease;
+}
+
+.seminars-cta .btn-primary:hover {
+  background: var(--primary-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(20, 73, 100, 0.4);
+}
+
+.seminars-cta .btn-primary i {
+  margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    margin: 0 50px; /* Smaller space for mobile */
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-btn-prev {
+    left: -10px;
+  }
+  
+  .carousel-btn-next {
+    right: -10px;
+  }
+  
+  .card {
+    min-width: 320px; /* Smaller cards on mobile */
+  }
+  
+  .carousel-indicators {
+    margin-top: 1.5rem;
+  }
+  
+  .carousel-indicator {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .seminars-cta {
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+  }
+  
+  .cta-description {
+    font-size: var(--font-md);
+    margin-bottom: var(--space-md);
+  }
+  
+  .seminars-cta .btn-primary {
+    font-size: 1rem;
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-wrapper {
+    margin: 0 35px;
+  }
+  
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .carousel-btn-prev {
+    left: -5px;
+  }
+  
+  .carousel-btn-next {
+    right: -5px;
+  }
+  
+  .card {
+    min-width: 280px;
+  }
+  
+  .cta-description {
+    font-size: var(--font-sm);
+    padding: 0 1rem;
+  }
+}

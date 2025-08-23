@@ -1,0 +1,210 @@
+/* ========================================
+   Instagram Posts Component - Academia ABC
+   ======================================== */
+
+/* Graduates Section */
+.graduates {
+    padding: var(--space-3xl) 0;
+    background: var(--light-gray);
+}
+
+.graduates h2 {
+    text-align: center;
+    color: var(--primary-blue);
+    font-size: var(--font-3xl);
+    margin-bottom: var(--space-sm);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: var(--font-lg);
+    color: var(--charcoal);
+    margin-bottom: var(--space-xl);
+    opacity: 0.8;
+}
+
+/* Instagram Posts Grid */
+.instagram-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.instagram-post {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal);
+}
+
+.instagram-post:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Post Embed Container */
+.post-embed {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Instagram Media Styling */
+.instagram-media {
+    border: none !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    border-radius: var(--radius-lg) !important;
+    box-shadow: none !important;
+}
+
+/* Loading State */
+.instagram-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl);
+    text-align: center;
+    min-height: 400px;
+    background: var(--light-gray);
+    border-radius: var(--radius-lg);
+}
+
+.instagram-loading i {
+    font-size: 3rem;
+    color: var(--warm-gold);
+    margin-bottom: var(--space-md);
+}
+
+.instagram-loading p {
+    color: var(--charcoal);
+    margin-bottom: var(--space-lg);
+    font-size: var(--font-md);
+}
+
+.instagram-loading .btn-primary {
+    font-size: var(--font-sm);
+    padding: var(--space-sm) var(--space-lg);
+}
+
+/* Instagram CTA Section */
+.instagram-cta {
+    text-align: center;
+    padding: var(--space-xl) 0;
+    border-top: 1px solid rgba(20, 73, 100, 0.1);
+    margin-top: var(--space-xl);
+}
+
+.instagram-cta p {
+    font-size: var(--font-lg);
+    color: var(--charcoal);
+    margin-bottom: var(--space-lg);
+}
+
+.instagram-cta .btn-primary {
+    font-size: var(--font-md);
+    padding: 16px 32px;
+    background: #E4405F;
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 4px 15px rgba(228, 64, 95, 0.3);
+    transition: all 0.3s ease;
+}
+
+.instagram-cta .btn-primary:hover {
+    background: var(--primary-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(20, 73, 100, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .graduates {
+        padding: var(--space-2xl) 0;
+    }
+
+    .graduates h2 {
+        font-size: var(--font-2xl);
+    }
+
+    .section-subtitle {
+        font-size: var(--font-md);
+    }
+
+    .instagram-posts-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .instagram-loading {
+        min-height: 300px;
+        padding: var(--space-lg);
+    }
+
+    .instagram-loading i {
+        font-size: 2.5rem;
+    }
+
+    .instagram-cta p {
+        font-size: var(--font-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .instagram-posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .post-embed {
+        min-height: 350px;
+    }
+
+    .instagram-loading {
+        min-height: 250px;
+        padding: var(--space-md);
+    }
+}
+
+/* Instagram Embed Overrides */
+@media (max-width: 658px) {
+    .instagram-media {
+        min-width: 100% !important;
+    }
+}
+
+/* Animation for Instagram posts */
+.instagram-post.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all var(--transition-slow);
+}
+
+.instagram-post.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Instagram brand colors */
+.instagram-gradient {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Error handling for failed embeds */
+.instagram-media[data-instgrm-captioned] {
+    min-height: 400px;
+}
+
+/* Ensure embeds are responsive */
+.instagram-media-rendered {
+    max-width: 100% !important;
+}

@@ -1,0 +1,208 @@
+[
+  {
+    "id": 1,
+    "titulo": "Perros  de Trabajo: Busqueda y Seguridad",
+    "tipo": "Masterclass",
+    "temas": [
+      "Rastro",
+      "Seguridad y Protección",
+      "Detección de sustancias",
+      "Búsqueda y rescate"
+    ],
+    "profesor": {
+      "nombre": "Cesar Huala",
+      "instagram": "club_canino_pampa"
+    }
+  },
+  {
+    "id": 2,
+    "titulo": "Oratoria: Comunicacion Efectiva",
+    "tipo": "Masterclass",
+    "temas": [
+      "Conversaciones difíciles",
+      "Técnicas para hablar en público",
+      "Clases grupales e individuales",
+      "Comunicación efectiva"
+    ],
+    "profesor": {
+      "nombre": "Facundo Maldonado",
+      "instagram": "facumarketing"
+    }
+  },
+  {
+    "id": 3,
+    "titulo": "Psicología para el Emprendedor Canino",
+    "tipo": "Masterclass",
+    "temas": [
+      "Claves para la psicología del emprendedor",
+      "Síndrome del impostor",
+      "Desarrollo personal",
+      "Emprendimiento"
+    ],
+    "profesor": {
+      "nombre": "Patricia Moya",
+      "instagram": "soy.patriciamoya"
+    }
+  },
+  {
+    "id": 4,
+    "titulo": "Flores de Bach en Animales: Vinculo, emociones y Bienestar canino",
+    "tipo": "Masterclass",
+    "temas": [
+      "Esencias florales de Bach",
+      "Formulación y administración del gotero",
+      "Terapias naturales",
+      "Bienestar animal"
+    ],
+    "profesor": {
+      "nombre": "Melisa Vilca Figueroa",
+      "instagram": "sinergia.animal"
+    }
+  },
+  {
+    "id": 5,
+    "titulo": "Comportamiento Felino: Entre Ladridos y Maullidos. Claves para la convivencia Interespecie",
+    "tipo": "Masterclass",
+    "temas": [
+      "Comportamiento y Lenguaje Felino",
+      "Adaptación perros/gatos",
+      "Convivencia multiespecie"
+    ],
+    "profesor": {
+      "nombre": "Alejandra López Irala",
+      "instagram": "rasca.y.pica"
+    }
+  },
+  {
+    "id": 6,
+    "titulo": "Veterinaria: Primeros Auxilios y RCP",
+    "tipo": "Masterclass",
+    "temas": [
+      "Emergencias y manejo en la veterinaria",
+      "Trabajo en equipo entre adiestradores y veterinarios",
+      "Primeros auxilios",
+      "Protocolo de emergencias"
+    ],
+    "profesor": {
+      "nombre": "Alejandro Brunel",
+      "instagram": "vetbrunel"
+    }
+  },
+  {
+    "id": 7,
+    "titulo": "Perros de Terapia y Asistencia",
+    "tipo": "Masterclass",
+    "temas": [
+      "Diferencias",
+      "Seleccion del cachorro",
+      "Perro de Asistencia: Tipos, formacion y vinculacion",
+      "Perro de Terapia: Formacion, campo laboral, examenes",
+      "Perro de soporte emocional.",
+      "Leyes actualizadas al 2025"
+    ],
+    "profesor": {
+      "nombre": "Melina Lopez",
+      "instagram": "tribu.adiestramiento"
+    }
+  },
+  {
+    "id": 8,
+    "titulo": "Marketing: Redes Sociales para Emprendedor Canino",
+    "tipo": "Masterclass",
+    "temas": [
+      "Marca vs Emprendedor",
+      "Marca personal",
+      "Diferencias",
+      "Planificacion de contenido",
+      "Herramientas utiles",
+      "Algoritmo",
+      "Alcance y vida de un posteo",
+      "Nicho y publico objetivo",
+      "Investigacion de mercado."
+    ],
+    "profesor": {
+      "nombre": "Melina Lopez",
+      "instagram": "tribu.adiestramiento"
+    }
+  },
+  {
+    "id": 9,
+    "titulo": "Ventas: Como caraj* empezar a vender mi servicio de Adiestrador Canino?",
+    "tipo": "Masterclass",
+    "temas": [
+      "Venta consultiva",
+      "Cliente ideal",
+      "Pricing",
+      "Comunicacion efectiva",
+      "Captacion de clientes",
+      "Venta exitosa"
+    ],
+    "profesor": {
+      "nombre": "Facundo Maldonado",
+      "instagram": "facumarketing"
+    }
+  },
+  {
+    "id": 10,
+    "titulo": "Neuromarketing: Como persuadir a la hora de vender",
+    "tipo": "Masterclass",
+    "temas": [
+      "Conexion emocional",
+      "Estrategias de persuasion",
+      "Psicologia del color",
+      "Tecnicas del Neuromarketing",
+      "Lenguaje no verbal"
+    ],
+    "profesor": {
+      "nombre": "Patricia Moya",
+      "instagram": "soy.patriciamoya"
+    }
+  },
+  {
+    "id": 11,
+    "titulo": "Lenguaje y Comportamiento: Hablemos menos para comunicarnos mas",
+    "tipo": "Seminario",
+    "temas": [
+      "Lenguaje canino",
+      "Sentidos y comunicacion",
+      "Etapas de desarrollo",
+      "Señales de la comunicacion"
+    ],
+    "profesor": {
+      "nombre": "Melina Lopez y Melisa Vilca Figueroa",
+      "instagram": "academiacanina.abc"
+    }
+  },
+  {
+    "id": 12,
+    "titulo": "Cachorros: Educando a mi cachorro de 0 a 9 meses",
+    "tipo": "Taller",
+    "temas": [
+      "Etapas de desarrollo",
+      "No morder las manos",
+      "Primeros paseos",
+      "Juegos apropiados",
+      "Evitar problemas de comportamiento",
+      "Habitos higienicos"
+    ],
+    "profesor": {
+      "nombre": "Melina Lopez",
+      "instagram": "tribu.adiestramiento"
+    }
+  },
+  {
+    "id": 13,
+    "titulo": " Entre bebés y perros",
+    "tipo": "Taller",
+    "temas": [
+      "Bienestar canino",
+      "Preparacion para la llegada del bebe",
+      "Interacciones controladas",
+      "Lenguaje canino"
+    ],
+    "profesor": {
+      "nombre": "Melina Lopez y Melisa Vilca Figueroa",
+      "instagram": "academiacanina.abc"
+    }
+  }
+]

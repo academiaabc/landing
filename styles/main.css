@@ -1,0 +1,232 @@
+/* ========================================
+   Main Stylesheet - Academia ABC
+   Imports all modular CSS files
+   ======================================== */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Base Styles */
+@import url('./variables.css');
+@import url('./base.css');
+
+/* Layout */
+@import url('./layout/grid.css');
+@import url('./layout/sections.css');
+
+/* Components */
+@import url('./components/buttons.css');
+@import url('./components/header.css');
+@import url('./components/hero.css');
+@import url('./components/cards.css');
+@import url('./components/footer.css');
+@import url('./components/images.css');
+@import url('./components/instagram.css');
+@import url('./components/seminars.css');
+@import url('./components/forms.css');
+@import url('./components/modal.css');
+
+/* Additional Animations and Utilities */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+}
+
+/* Delay Classes */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+
+/* Hover Transforms */
+.hover-lift {
+    transition: transform var(--transition-normal);
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid var(--warm-gold);
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: var(--warm-gold);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(200, 168, 130, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--primary-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(20, 73, 100, 0.5);
+}
+
+.back-to-top:active {
+    transform: translateY(-2px);
+}
+
+/* Mobile Back to Top Button */
+@media (max-width: 768px) {
+    .back-to-top {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .footer,
+    .hero-buttons,
+    .btn,
+    .cta-button,
+    .back-to-top {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: black;
+        background: white;
+    }
+
+    .section {
+        padding: 20pt 0;
+        page-break-inside: avoid;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-blue: #000080;
+        --warm-gold: #B8860B;
+        --charcoal: #000000;
+        --light-gray: #F0F0F0;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .fade-in {
+        opacity: 1;
+        transform: none;
+    }
+}

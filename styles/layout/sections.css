@@ -1,0 +1,1062 @@
+/* ========================================
+   Section Layouts - Academia ABC
+   ======================================== */
+
+/* Base Section Styles */
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+.section-sm {
+  padding: var(--space-2xl) 0;
+}
+
+.section-lg {
+  padding: 6rem 0;
+}
+
+.section-xl {
+  padding: 8rem 0;
+}
+
+/* Section Backgrounds */
+.section-primary {
+  background: var(--primary-blue);
+  color: var(--white);
+}
+
+.section-light {
+  background: var(--light-gray);
+}
+
+.section-white {
+  background: var(--white);
+}
+
+.section-cream {
+  background: var(--cream);
+}
+
+.section-dark {
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+/* About Section */
+.about {
+  padding: var(--space-3xl) 0;
+  background: var(--white);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.about-header h2 {
+  color: var(--primary-blue);
+  font-size: var(--font-3xl);
+  margin-bottom: var(--space-md);
+}
+
+.about-subtitle {
+  font-size: var(--font-lg);
+  color: var(--charcoal);
+  opacity: 0.8;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.feature-card {
+  background: var(--light-gray);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  transition: transform var(--transition-normal);
+  border: 1px solid rgba(20, 73, 100, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--warm-gold);
+  color: var(--white);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-lg);
+  font-size: 2rem;
+}
+
+.feature-card h3 {
+  color: var(--primary-blue);
+  font-size: var(--font-xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-md);
+}
+
+.feature-card p {
+  font-size: var(--font-md);
+  color: var(--charcoal);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about-cta {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--light-blue) 100%
+  );
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  text-align: center;
+}
+
+.about-cta h3 {
+  font-size: var(--font-2xl);
+  margin-bottom: var(--space-md);
+  color: var(--white);
+}
+
+.about-cta p {
+  font-size: var(--font-lg);
+  font-style: italic;
+  margin-bottom: var(--space-xl);
+  opacity: 0.95;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.about-cta .btn-primary {
+  background: var(--warm-gold);
+  color: var(--white);
+  font-size: var(--font-md);
+  padding: 15px 30px;
+  border-radius: var(--radius-xl);
+}
+
+.about-cta .btn-primary:hover {
+  background: var(--white);
+  color: var(--primary-blue);
+  transform: translateY(-2px);
+}
+
+/* Mission Quote Styles */
+.mission-quote {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin: var(--space-lg) 0;
+  border-left: 4px solid var(--warm-gold);
+}
+
+.quote-text {
+  font-size: var(--font-lg);
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: var(--space-md);
+  color: var(--white);
+  opacity: 0.95;
+}
+
+.quote-author {
+  font-size: var(--font-md);
+  font-weight: var(--font-semibold);
+  color: var(--warm-gold);
+  text-align: right;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Courses Section */
+.courses {
+  padding: var(--space-3xl) 0;
+  background: var(--light-gray);
+}
+
+.courses-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.courses h2 {
+  color: var(--primary-blue);
+  font-size: var(--font-3xl);
+  margin-bottom: var(--space-md);
+}
+
+.courses-subtitle {
+  font-size: var(--font-lg);
+  color: var(--charcoal);
+  opacity: 0.8;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Curso Principal */
+.curso-principal {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  margin-bottom: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(20, 73, 100, 0.08);
+}
+
+.curso-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.curso-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.curso-principal h3 {
+  color: var(--primary-blue);
+  font-size: var(--font-2xl);
+  font-weight: var(--font-bold);
+  margin: 0;
+}
+
+.curso-description {
+  font-size: var(--font-lg);
+  color: var(--charcoal);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+  opacity: 0.9;
+}
+
+.detalle-curso {
+  list-style: none;
+  padding: 0;
+  margin-bottom: var(--space-xl);
+}
+
+.detalle-curso li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+  font-size: var(--font-md);
+  color: var(--charcoal);
+}
+
+.detalle-curso li i {
+  color: var(--warm-gold);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.curso-buttons {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cursos Extra */
+.cursos-extra {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  border: 1px solid rgba(20, 73, 100, 0.05);
+}
+
+.cursos-extra-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.cursos-extra-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--warm-gold);
+  color: var(--white);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.cursos-extra h4 {
+  color: var(--primary-blue);
+  font-size: var(--font-xl);
+  font-weight: var(--font-bold);
+  margin: 0;
+}
+
+.cursos-extra-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cursos-extra-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  font-size: var(--font-md);
+  color: var(--charcoal);
+  border-bottom: 1px solid rgba(20, 73, 100, 0.1);
+}
+
+.cursos-extra-list li:last-child {
+  border-bottom: none;
+}
+
+.cursos-extra-list li i {
+  color: var(--primary-blue);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Beneficios ABC */
+.beneficios-abc {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--light-blue) 100%
+  );
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  margin-bottom: var(--space-xl);
+}
+
+.beneficios-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.beneficios-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--warm-gold);
+  color: var(--white);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.beneficios-abc h3 {
+  color: var(--white);
+  font-size: var(--font-2xl);
+  font-weight: var(--font-bold);
+  margin: 0;
+}
+
+.beneficios-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.beneficios-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.beneficios-list li:last-child {
+  border-bottom: none;
+}
+
+.beneficios-list li i {
+  color: var(--warm-gold);
+  font-size: 1.25rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.beneficio-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.beneficio-content strong {
+  font-size: var(--font-md);
+  font-weight: var(--font-bold);
+  color: var(--white);
+}
+
+.beneficio-content span {
+  font-size: var(--font-sm);
+  color: var(--white);
+  opacity: 0.9;
+}
+
+/* CTA Final */
+.cursos-cta {
+  text-align: center;
+  padding: var(--space-2xl);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--warm-gold);
+}
+
+.cursos-cta-content h4 {
+  color: var(--primary-blue);
+  font-size: var(--font-xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-md);
+}
+
+.cursos-cta-content p {
+  font-size: var(--font-md);
+  color: var(--charcoal);
+  opacity: 0.8;
+  margin-bottom: var(--space-lg);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Remove duplicate btn-lg styles - they're already defined in buttons.css */
+
+/* Team Section */
+.team {
+  padding: var(--space-3xl) 0;
+  background: var(--white);
+}
+
+.team h2 {
+  text-align: center;
+  color: var(--primary-blue);
+  font-size: var(--font-3xl);
+  margin-bottom: var(--space-xl);
+}
+
+/* Contact Section */
+.contact {
+  padding: var(--space-3xl) 0;
+  background: var(--light-gray);
+  color: var(--charcoal);
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: var(--font-3xl);
+  margin-bottom: var(--space-lg);
+  color: var(--primary-blue);
+}
+
+/* Contact Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.contact-header p {
+  font-size: var(--font-lg);
+  opacity: 0.8;
+  color: var(--charcoal);
+  margin-bottom: 0;
+}
+
+/* Contact Layout - Two Columns */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.contact-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.contact-form-column {
+  position: sticky;
+  top: 120px; /* Account for fixed header */
+}
+
+/* Contact Grid - Now for left column only */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+.contact-card {
+  background: var(--white);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(20, 73, 100, 0.08);
+  transition: all var(--transition-normal);
+  text-align: center;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--warm-gold);
+}
+
+.contact-card i {
+  font-size: 2.5rem;
+  color: var(--warm-gold);
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+.contact-card h3 {
+  color: var(--primary-blue);
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-sm);
+  font-weight: var(--font-bold);
+}
+
+.contact-card p {
+  margin: 0;
+  font-size: var(--font-md);
+  color: var(--charcoal);
+  opacity: 0.8;
+}
+
+.contact-card a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: var(--font-semibold);
+  transition: color var(--transition-normal);
+}
+
+.contact-card a:hover {
+  color: var(--warm-gold);
+}
+
+/* Contact Hours in Phone Card */
+.contact-hours {
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid rgba(20, 73, 100, 0.1);
+}
+
+.contact-hours small {
+  margin-top: 4px;
+  font-size: var(--font-xs);
+  color: rgba(51, 51, 51, 0.7);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  justify-content: center;
+}
+
+.contact-hours i {
+  font-size: var(--font-xs) !important;
+  color: var(--warm-gold) !important;
+  margin-bottom: 0 !important;
+}
+
+/* Special styling for long email */
+.email-link {
+  word-break: break-all;
+  font-size: var(--font-sm) !important;
+  line-height: 1.3;
+  display: block;
+  padding: 2px 0;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: none; /* Hidden by default on desktop */
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: var(--space-xl) 0;
+}
+
+.cta-buttons .btn-primary,
+.cta-buttons .btn-secondary {
+  padding: 20px 40px;
+  font-size: var(--font-lg);
+  font-weight: var(--font-semibold);
+  border-radius: var(--radius-xl);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  border: 2px solid;
+}
+
+.cta-buttons .btn-primary {
+  background: var(--warm-gold);
+  color: var(--white);
+  border-color: var(--warm-gold);
+}
+
+.cta-buttons .btn-primary:hover {
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.cta-buttons .btn-secondary {
+  background: transparent;
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.cta-buttons .btn-secondary:hover {
+  background: var(--primary-blue);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.section-header h2 {
+  font-size: var(--font-3xl);
+  margin-bottom: var(--space-sm);
+}
+
+.section-header p {
+  font-size: var(--font-lg);
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Section Content */
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-content-wide {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Two Column Layout */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.two-column-reverse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+}
+
+.two-column-reverse > :first-child {
+  order: 2;
+}
+
+.two-column-reverse > :last-child {
+  order: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .section-lg {
+    padding: var(--space-3xl) 0;
+  }
+
+  .section-xl {
+    padding: var(--space-2xl) 0;
+  }
+
+  .about,
+  .courses,
+  .team,
+  .contact {
+    padding: var(--space-2xl) 0;
+  }
+
+  .about-header h2,
+  .courses h2,
+  .team h2,
+  .contact h2 {
+    font-size: var(--font-2xl);
+  }
+
+  /* Courses Mobile Styles */
+  .courses-subtitle {
+    font-size: var(--font-md);
+  }
+
+  .curso-principal {
+    padding: var(--space-xl);
+  }
+
+  .curso-header {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+
+  .curso-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .curso-principal h3 {
+    font-size: var(--font-xl);
+  }
+
+  .curso-description {
+    font-size: var(--font-md);
+  }
+
+  .detalle-curso li {
+    font-size: var(--font-sm);
+  }
+
+  .curso-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cursos-extra {
+    padding: var(--space-lg);
+  }
+
+  .cursos-extra-header {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+
+  .cursos-extra-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .cursos-extra h4 {
+    font-size: var(--font-lg);
+  }
+
+  .cursos-extra-list li {
+    font-size: var(--font-sm);
+    align-items: flex-start;
+  }
+
+  .beneficios-abc {
+    padding: var(--space-xl);
+  }
+
+  .beneficios-header {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+
+  .beneficios-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .beneficios-abc h3 {
+    font-size: var(--font-xl);
+  }
+
+  .beneficios-list li {
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .beneficios-list li i {
+    font-size: 1rem;
+  }
+
+  .beneficio-content strong {
+    font-size: var(--font-sm);
+  }
+
+  .beneficio-content span {
+    font-size: var(--font-xs);
+  }
+
+  .cursos-cta {
+    padding: var(--space-xl);
+  }
+
+  .cursos-cta-content h4 {
+    font-size: var(--font-lg);
+  }
+
+  .cursos-cta-content p {
+    font-size: var(--font-sm);
+  }
+
+  /* btn-lg responsive styles handled in buttons.css */
+
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .feature-card {
+    padding: var(--space-lg);
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .about-cta {
+    padding: var(--space-xl);
+  }
+
+  .about-cta h3 {
+    font-size: var(--font-xl);
+  }
+
+  .about-cta p {
+    font-size: var(--font-md);
+  }
+
+  .mission-quote {
+    padding: var(--space-md);
+    margin: var(--space-md) 0;
+  }
+
+  .about-cta .btn-primary {
+    white-space: nowrap;
+    font-size: var(--font-sm);
+    padding: 12px 20px;
+  }
+
+  .about-cta .btn-primary::after {
+    content: "Ver Programas";
+  }
+
+  .about-cta .btn-primary .btn-text {
+    display: none;
+  }
+
+  .quote-text {
+    font-size: var(--font-md);
+    line-height: 1.6;
+  }
+
+  .quote-author {
+    font-size: var(--font-sm);
+    text-align: center;
+  }
+
+  .section-header h2 {
+    font-size: var(--font-2xl);
+  }
+
+  .section-header p {
+    font-size: var(--font-md);
+  }
+
+  .two-column,
+  .two-column-reverse {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .two-column-reverse > :first-child,
+  .two-column-reverse > :last-child {
+    order: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: var(--space-xl) 0;
+  }
+
+  .about-header h2,
+  .courses h2,
+  .team h2,
+  .contact h2 {
+    font-size: var(--font-xl);
+  }
+
+  .about-subtitle {
+    font-size: var(--font-md);
+  }
+
+  .feature-card h3 {
+    font-size: var(--font-lg);
+  }
+
+  .feature-card p {
+    font-size: var(--font-sm);
+  }
+
+  .contact p {
+    font-size: var(--font-md);
+  }
+
+  /* Contact Layout - Stack on mobile */
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .contact-form-column {
+    position: static; /* Remove sticky on mobile */
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .contact-card {
+    padding: var(--space-lg);
+  }
+
+  .contact-card i {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    display: flex; /* Show on mobile */
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .cta-buttons .btn-primary {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    padding: 18px 24px;
+    font-size: var(--font-md);
+    background: var(--warm-gold);
+    color: var(--white);
+    border: 2px solid var(--warm-gold);
+    border-radius: var(--radius-xl);
+    text-decoration: none;
+    font-weight: var(--font-semibold);
+    transition: all var(--transition-normal);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .cta-buttons .btn-primary:hover {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .email-link {
+    font-size: var(--font-xs) !important;
+  }
+
+  /* Courses Extra Small Mobile Styles */
+  .courses-subtitle {
+    font-size: var(--font-sm);
+  }
+
+  .curso-principal {
+    padding: var(--space-lg);
+  }
+
+  .curso-principal h3 {
+    font-size: var(--font-lg);
+  }
+
+  .curso-description {
+    font-size: var(--font-sm);
+  }
+
+  .detalle-curso li {
+    font-size: var(--font-xs);
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+
+  .cursos-extra {
+    padding: var(--space-md);
+  }
+
+  .cursos-extra h4 {
+    font-size: var(--font-md);
+  }
+
+  .beneficios-abc {
+    padding: var(--space-lg);
+  }
+
+  .beneficios-abc h3 {
+    font-size: var(--font-lg);
+  }
+
+  .cursos-cta {
+    padding: var(--space-lg);
+  }
+
+  .cursos-cta-content h4 {
+    font-size: var(--font-md);
+  }
+}
