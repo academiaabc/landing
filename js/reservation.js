@@ -389,14 +389,16 @@ async function handleModalFormSubmission() {
   confirmBtn.disabled = true;
 
   try {
+    const formData = new FormData();
+    Object.keys(apiData).forEach(key => {
+      formData.append(key, apiData[key]);
+    });
+
     const response = await fetch(
       "https://script.google.com/macros/s/AKfycbyxeQvXCm12DdeF9KxFswM2mll-Ow800bdOIQI1o_Fpm1pyAhHRecRD3oEZbSlZkTYayw/exec",
       {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(apiData),
+        body: formData,
       }
     );
 
