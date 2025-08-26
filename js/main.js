@@ -423,6 +423,10 @@ function initials(name) {
 
 function renderSeminars(data) {
   const container = document.getElementById("seminars-container");
+  if (!container) {
+    console.error("Element with ID 'seminars-container' not found");
+    return;
+  }
   container.innerHTML = "";
   data.forEach((seminar) => {
     const card = renderSeminarCard(seminar);
@@ -549,12 +553,15 @@ function updateCarousel() {
 
 // Simula fetch de datos
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("./public/recorded_classes.json")
-    .then((res) => res.json())
-    .then((data) => {
-      renderSeminars(data);
-    })
-    .catch((err) => console.error("Error cargando JSON", err));
+  // Only load seminars if the container exists (index.html)
+  if (document.getElementById("seminars-container")) {
+    fetch("./public/recorded_classes.json")
+      .then((res) => res.json())
+      .then((data) => {
+        renderSeminars(data);
+      })
+      .catch((err) => console.error("Error cargando JSON", err));
+  }
 });
 
 // Form validation and submission functions
@@ -568,7 +575,7 @@ function validateForm() {
 
 async function handleContactFormSubmit(event) {
   event.preventDefault();
-  
+
   // Validate spam protection
   if (!validateForm()) {
     return false;
@@ -577,26 +584,26 @@ async function handleContactFormSubmit(event) {
   // Get reCAPTCHA response
   const recaptchaResponse = grecaptcha.getResponse();
   if (!recaptchaResponse) {
-    alert('Por favor completa la verificación reCAPTCHA');
+    alert("Por favor completa la verificación reCAPTCHA");
     return false;
   }
 
   // Get form data
   const form = event.target;
   const formData = new FormData(form);
-  
+
   // Build JSON payload
   const data = {
-    api_key: 'C3AB8FF13720E8AD9047DD39466B3C8974E592C2FA383D4A3960714CAEF0C4F2',
-    contact_type: 'contacto',
-    'g-recaptcha-response': recaptchaResponse,
-    email: formData.get('email'),
-    fullname: formData.get('fullname'),
-    whatsapp: formData.get('whatsapp'),
-    location: formData.get('location'),
-    occupation: formData.get('occupation'),
-    how_found: formData.get('how_found'),
-    contact_times: formData.get('contact_times')
+    api_key: "C3AB8FF13720E8AD9047DD39466B3C8974E592C2FA383D4A3960714CAEF0C4F2",
+    contact_type: "contacto",
+    "g-recaptcha-response": recaptchaResponse,
+    email: formData.get("email"),
+    fullname: formData.get("fullname"),
+    whatsapp: formData.get("whatsapp"),
+    location: formData.get("location"),
+    occupation: formData.get("occupation"),
+    how_found: formData.get("how_found"),
+    contact_times: formData.get("contact_times"),
   };
 
   // Show loading state
@@ -607,26 +614,31 @@ async function handleContactFormSubmit(event) {
 
   try {
     const formData = new FormData();
-    Object.keys(data).forEach(key => {
+    Object.keys(data).forEach((key) => {
       formData.append(key, data[key]);
     });
 
-    const response = await fetch('https://script.google.com/macros/s/AKfycbyxeQvXCm12DdeF9KxFswM2mll-Ow800bdOIQI1o_Fpm1pyAhHRecRD3oEZbSlZkTYayw/exec', {
-      method: 'POST',
-      body: formData
-    });
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbxFuX1b4_ccMbLQdV3fQMoOAjZF8bx3_VscWKUB_UwdejYf7n491KmDEVK8LoSmzW1XMA/exec",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
     if (response.ok) {
       // Show success message
-      alert('¡Mensaje enviado exitosamente! Te contactaremos pronto.');
+      alert("¡Mensaje enviado exitosamente! Te contactaremos pronto.");
       form.reset();
       grecaptcha.reset();
     } else {
-      throw new Error('Error en el envío');
+      throw new Error("Error en el envío");
     }
   } catch (error) {
-    console.error('Error:', error);
-    alert('Hubo un error al enviar el formulario. Por favor intenta nuevamente.');
+    console.error("Error:", error);
+    alert(
+      "Hubo un error al enviar el formulario. Por favor intenta nuevamente."
+    );
   } finally {
     // Restore button
     submitBtn.innerHTML = originalText;

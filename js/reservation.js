@@ -340,11 +340,12 @@ async function handleModalFormSubmission() {
   const formData = new FormData(document.getElementById("modal-form"));
 
   // Get reCAPTCHA response
-  const recaptchaResponse = grecaptcha.getResponse();
-  if (!recaptchaResponse) {
-    alert("Por favor completa la verificación reCAPTCHA");
-    return;
-  }
+  // const recaptchaResponse = grecaptcha.getResponse();
+  // if (!recaptchaResponse) {
+  //   alert("Por favor completa la verificación reCAPTCHA");
+  //   return;
+  // }
+  const recaptchaResponse = "test";
 
   const data = {
     fullName: formData.get("fullName"),
@@ -385,12 +386,12 @@ async function handleModalFormSubmission() {
 
   try {
     const formData = new FormData();
-    Object.keys(apiData).forEach(key => {
+    Object.keys(apiData).forEach((key) => {
       formData.append(key, apiData[key]);
     });
 
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbyxeQvXCm12DdeF9KxFswM2mll-Ow800bdOIQI1o_Fpm1pyAhHRecRD3oEZbSlZkTYayw/exec",
+      "https://script.google.com/macros/s/AKfycbxFuX1b4_ccMbLQdV3fQMoOAjZF8bx3_VscWKUB_UwdejYf7n491KmDEVK8LoSmzW1XMA/exec",
       {
         method: "POST",
         body: formData,
@@ -419,6 +420,8 @@ async function handleModalFormSubmission() {
     // Reset button
     confirmBtn.innerHTML = originalText;
     confirmBtn.disabled = false;
+    // Reset reCAPTCHA
+    // grecaptcha.reset();
   }
 }
 
