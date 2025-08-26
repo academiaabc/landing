@@ -351,6 +351,8 @@ async function handleModalFormSubmission() {
     email: formData.get("email"),
     phone: formData.get("phone"),
     selectedClasses: cart,
+    classCount: cart.length,
+    total: calculateTotal(),
   };
 
   // Validate required fields
@@ -472,6 +474,8 @@ function handleFormSubmission() {
     email: formData.get("email"),
     phone: formData.get("phone"),
     selectedClasses: cart,
+    classCount: cart.length,
+    total: calculateTotal(),
   };
 
   // Validate required fields
