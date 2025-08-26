@@ -350,12 +350,7 @@ async function handleModalFormSubmission() {
     fullName: formData.get("fullName"),
     email: formData.get("email"),
     phone: formData.get("phone"),
-    selectedClasses: cart.map((id) => {
-      const masterclass = allMasterclasses.find((m) => m.id === id);
-      return masterclass.titulo;
-    }),
-    classCount: cart.length,
-    total: calculateTotal(),
+    selectedClasses: cart,
   };
 
   // Validate required fields
@@ -378,8 +373,6 @@ async function handleModalFormSubmission() {
     email: data.email,
     phone: data.phone,
     selectedClasses: data.selectedClasses.join(","),
-    classCount: data.classCount,
-    total: data.total,
   };
 
   // Show processing state
@@ -478,12 +471,7 @@ function handleFormSubmission() {
     fullName: formData.get("fullName"),
     email: formData.get("email"),
     phone: formData.get("phone"),
-    selectedClasses: cart.map((id) => {
-      const masterclass = allMasterclasses.find((m) => m.id === id);
-      return masterclass.titulo;
-    }),
-    classCount: cart.length,
-    total: calculateTotal(),
+    selectedClasses: cart,
   };
 
   // Validate required fields
