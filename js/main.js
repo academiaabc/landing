@@ -606,12 +606,14 @@ async function handleContactFormSubmit(event) {
   submitBtn.disabled = true;
 
   try {
+    const formData = new FormData();
+    Object.keys(data).forEach(key => {
+      formData.append(key, data[key]);
+    });
+
     const response = await fetch('https://script.google.com/macros/s/AKfycbyxeQvXCm12DdeF9KxFswM2mll-Ow800bdOIQI1o_Fpm1pyAhHRecRD3oEZbSlZkTYayw/exec', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data)
+      body: formData
     });
 
     if (response.ok) {
