@@ -340,12 +340,11 @@ async function handleModalFormSubmission() {
   const formData = new FormData(document.getElementById("modal-form"));
 
   // Get reCAPTCHA response
-  // const recaptchaResponse = grecaptcha.getResponse();
-  // if (!recaptchaResponse) {
-  //   alert("Por favor completa la verificación reCAPTCHA");
-  //   return;
-  // }
-  const recaptchaResponse = "test";
+  const recaptchaResponse = grecaptcha.getResponse();
+  if (!recaptchaResponse) {
+    alert("Por favor completa la verificación reCAPTCHA");
+    return;
+  }
 
   const data = {
     fullName: formData.get("fullName"),
@@ -421,7 +420,7 @@ async function handleModalFormSubmission() {
     confirmBtn.innerHTML = originalText;
     confirmBtn.disabled = false;
     // Reset reCAPTCHA
-    // grecaptcha.reset();
+    grecaptcha.reset();
   }
 }
 
