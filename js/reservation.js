@@ -374,7 +374,7 @@ async function handleModalFormSubmission() {
     fullName: data.fullName,
     email: data.email,
     phone: data.phone,
-    selectedClasses: data.selectedClasses.join(","),
+    selectedClasses: data.selectedClasses,
   };
 
   // Show processing state
