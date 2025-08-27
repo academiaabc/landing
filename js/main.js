@@ -396,11 +396,7 @@ function renderSeminarCard(data) {
       </div>
       <div class="professor">
         <div class="avatar">
-          <img src="${data.profesor.imagen}" alt="${
-    data.profesor.nombre
-  }" onerror="this.parentNode.textContent='${initials(
-    data.profesor.nombre
-  )}'" />
+          <div class="avatar-initials">${initials(data.profesor.nombre)}</div>
         </div>
         <div class="professor-info">
           <p>${data.profesor.nombre}</p>
@@ -654,7 +650,6 @@ function initBannerModal() {
   const modal = document.getElementById("banner-modal");
   const closeBtn = document.getElementById("banner-modal-close");
   const bannerImage = document.querySelector(".banner-image");
-  const infoBtn = document.querySelector(".banner-info-btn");
 
   if (!modal) return;
 
