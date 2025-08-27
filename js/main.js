@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initBackToTop();
   initProgramModal();
   initReglamentoModal();
+  initBannerModal();
 });
 
 // Smooth scrolling for anchor links
@@ -646,6 +647,76 @@ async function handleContactFormSubmit(event) {
   }
 
   return false;
+}
+
+// Banner Modal functionality
+function initBannerModal() {
+  const modal = document.getElementById("banner-modal");
+  const closeBtn = document.getElementById("banner-modal-close");
+  const bannerImage = document.querySelector(".banner-image");
+  const infoBtn = document.querySelector(".banner-info-btn");
+
+  if (!modal) return;
+
+  const currentDate = new Date();
+  const expirationDate = new Date(2025, 8, 8);
+
+  if (currentDate < expirationDate) {
+    setTimeout(() => {
+      showBannerModal();
+    }, 1000);
+  }
+
+  // Close modal function
+  function closeBannerModal() {
+    modal.classList.remove("show");
+    document.body.style.overflow = "auto";
+
+    // Hide modal after animation completes
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 400);
+  }
+
+  // Show modal function
+  function showBannerModal() {
+    modal.style.display = "flex";
+    document.body.style.overflow = "hidden";
+
+    // Add show class for animation
+    setTimeout(() => {
+      modal.classList.add("show");
+    }, 10);
+  }
+
+  // Close button event
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeBannerModal);
+  }
+
+  // Click on image to go to form (same as info button)
+  if (bannerImage) {
+    bannerImage.addEventListener("click", function () {
+      window.open(
+        "https://docs.google.com/forms/d/1HhfngYJWTir6zYP5C81m5VNgpnaWjL-Jgxf-kjF_mTM/preview",
+        "_blank"
+      );
+    });
+  }
+
+  // Close modal when clicking outside
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      closeBannerModal();
+    }
+  });
+
+  // Close modal with ESC key
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && modal.classList.contains("show")) {
+      closeBannerModal();
+    }
+  });
 }
 
 // Export functions for external use
